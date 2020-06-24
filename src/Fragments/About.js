@@ -21,6 +21,14 @@ const About = props => {
                     <Grid item xs={3}>
                         <img src={corbanpic} alt="Corban Joyce" style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/>
                     </Grid>
+                    <Grid item xs={12}>
+                    <h3 style={{alignItems: 'center'}}>
+                        Other Stuff
+                    </h3>
+                        <p>
+                            I'm not sure what else to put here.
+                        </p>
+                    </Grid>
                 </Grid>
         </body>
     
