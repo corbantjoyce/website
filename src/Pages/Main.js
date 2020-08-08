@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '../Fragments/Header';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import Journal from '../Fragments/Journal';
 import About from '../Fragments/About';
 import Links from '../Fragments/Links';
 import Home from '../Fragments/Home';
-// import CenterColumn from '../Fragments/CenterColumn';
+import Research from '../Fragments/Research';
 
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -15,14 +15,12 @@ import Grid from '@material-ui/core/Grid';
 // import snow from '../images/snow.jpeg';
 import lakelucerne from '../images/lakelucerne.jpeg';
 
-
-
 const sections = [
     { title: 'Home', url: '/' },
-    { title: 'About', url: 'about' },
-    { title: 'Music', url: 'music' },
-    { title: 'Videos', url: 'videos' },
-    { title: 'Research', url: 'research' },
+    { title: 'About', url: '/about' },
+    { title: 'Music', url: '/music' },
+    { title: 'Videos', url: '/videos' },
+    { title: 'Research', url: '/research' },
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
@@ -38,7 +36,11 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
+        marginBottom: '1%'
     },
+    image: {
+        marginTop: '1%',
+    }
 }));
 
 function Main() {    
@@ -47,26 +49,26 @@ function Main() {
     return (
         <>
             <Container maxWidth="xl">
-                <Grid container spacing={2}>
-                    <Grid item xl={12}>
-                        <img src={lakelucerne} alt="Field in Lake Lucerne" style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
-                    </Grid>
-                </Grid>
+                <img src={lakelucerne} alt="Field in Lake Lucerne" className={classes.image} style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
                 <Router>
                     <Header title="CORBAN" sections={sections} />
-                </Router>
                 <Grid container spacing={3} className={classes.root}>
                     <Grid item xs={2}>
                         <Paper className={classes.paper}>
                             <Links />
                         </Paper>
                     </Grid>
-                    <Grid item xs={10}>
+                    <Grid item xs={10} >
                         <Paper className={classes.paper}>
-                            <Route path='/:page' component={<page />}/>
+                            <Switch>
+                                <Route exact path='/' component={Home}/>
+                                <Route path='/about' component={About}/>
+                                <Route path='/research' component={Research}/>
+                            </Switch>
                         </Paper>
                     </Grid>
                 </Grid>
+                </Router>
             </Container>
         </>
     )
