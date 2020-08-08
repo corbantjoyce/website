@@ -20,14 +20,14 @@ import lakelucerne from '../images/lakelucerne.jpeg';
 const sections = [
     { title: 'Home', url: '/' },
     { title: 'About', url: 'about' },
-    // { title: 'Travel', url: 'travel' },
-    // { title: 'Health', url: 'health' },
     { title: 'Music', url: 'music' },
     { title: 'Videos', url: 'videos' },
+    { title: 'Research', url: 'research' },
+    // { title: 'Travel', url: 'travel' },
+    // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
     // { title: 'Personal Projects', url: 'personal' },
     // { title: 'Business', url: 'business' },
-    { title: 'Research', url: 'research' },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -41,19 +41,8 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const page = ({match}) => (
-    <div>
-        {match.params.page.toUpperCase()}
-    </div>
-)
-
 function Main() {    
     const classes = useStyles();
-
-    // function CenterColumn(props) {
-    //     switch props:
-    //     return <About />;
-    // }
     
     return (
         <>
@@ -64,7 +53,7 @@ function Main() {
                     </Grid>
                 </Grid>
                 <Router>
-                    <Header title="Corban" sections={sections} />
+                    <Header title="CORBAN" sections={sections} />
                 </Router>
                 <Grid container spacing={3} className={classes.root}>
                     <Grid item xs={2}>
@@ -74,15 +63,13 @@ function Main() {
                     </Grid>
                     <Grid item xs={10}>
                         <Paper className={classes.paper}>
-                            {/* <Route path='/:page' component={page}/> */}
-                            <Home />
+                            <Route path='/:page' component={<page />}/>
                         </Paper>
                     </Grid>
                 </Grid>
             </Container>
         </>
     )
-    
 }
 
 export default Main;
