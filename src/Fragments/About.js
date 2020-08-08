@@ -15,7 +15,7 @@ const About = props => {
             <Grid container spacing={2}>
                     <Grid item xs={9}>
                         <p>
-                            As of late June 2020, I am close to finishing the Capital One Developer Academy (CODA) program offered by Capital One.  Since this program trains me to be a full-stack web developer, this website serves the former purpose of providing me with practice in that field.  The latter purpose of this site is to document information about myself, wherein others may derive various uses, hopefully beneficial.
+                            In August 2020, I graduate from the Capital One Developer Academy (CODA) program offered by Capital One.  Since this program teaches me to be a full-stack web developer, this website serves the purpose of providing me with practice in that field.  The other purpose of this site is to document information about myself, wherein others may derive various uses, hopefully beneficial.
                         </p>
                     </Grid>
                     <Grid item xs={3}>

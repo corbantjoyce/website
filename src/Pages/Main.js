@@ -4,7 +4,8 @@ import Header from '../Fragments/Header'
 import Journal from '../Fragments/Journal';
 import About from '../Fragments/About';
 import Links from '../Fragments/Links';
-import CenterColumn from '../Fragments/CenterColumn';
+import Home from '../Fragments/Home';
+// import CenterColumn from '../Fragments/CenterColumn';
 
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,15 +13,15 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 const sections = [
-    { title: 'Home', url: '#' },
-    { title: 'Travel', url: '#' },
-    { title: 'Health', url: '#' },
-    { title: 'Music', url: '#' },
-    { title: 'Videos', url: '#' },
-    { title: 'Philanthropy', url: '#' },
-    { title: 'Personal Projects', url: '#' },
-    { title: 'Business', url: '#' },
-    { title: 'Research', url: '#' },
+    { title: 'Home', url: '' },
+    // { title: 'Travel', url: 'travel' },
+    // { title: 'Health', url: 'health' },
+    { title: 'Music', url: 'music' },
+    { title: 'Videos', url: 'videos' },
+    // { title: 'Philanthropy', url: 'philanthropy' },
+    // { title: 'Personal Projects', url: 'personal' },
+    // { title: 'Business', url: 'business' },
+    { title: 'Research', url: 'research' },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -46,7 +47,7 @@ function Main() {
     return (
         <>
             <Container maxWidth="xl">
-                <Header title="Corban Joyce's Website" sections={sections} />
+                <Header title="Corban" sections={sections} />
                 <Grid container spacing={3} className={classes.root}>
                     <Grid item xs={3}>
                         <Paper className={classes.paper}>
@@ -56,7 +57,7 @@ function Main() {
                     <Grid item xs={6}>
                         <Paper className={classes.paper}>
                             {/* <CenterColumn /> */}
-                            <About />
+                            <Home />
                         </Paper>
                     </Grid>
                     <Grid item xs={3}>
