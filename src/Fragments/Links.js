@@ -25,19 +25,19 @@ const Links = props => {
             <body>
                 <ul className={classes.list}>
                     <li className={classes.listItem}>
-                        <a href="mailto:corbantjoyce@gmail.com">
+                        <a href="mailto:corbantjoyce@gmail.com" target="_blank" rel="noopener noreferrer">
                             <MailOutlineIcon />
                             Email
                         </a>
                     </li>
                     <li className={classes.listItem}>
-                        <a href="https://www.linkedin.com/in/corban-joyce/">
+                        <a href="https://www.linkedin.com/in/corban-joyce/" target="_blank" rel="noopener noreferrer">
                             <LinkedInIcon />
                             LinkedIn
                         </a>
                     </li>
                     <li className={classes.listItem}>
-                        <a href="https://github.com/corbantjoyce">
+                        <a href="https://github.com/corbantjoyce" target="_blank" rel="noopener noreferrer">
                             <GitHubIcon />
                             Github
                         </a>

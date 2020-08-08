@@ -4,6 +4,7 @@ import Header from '../Fragments/Header'
 import Journal from '../Fragments/Journal';
 import About from '../Fragments/About';
 import Links from '../Fragments/Links';
+import CenterColumn from '../Fragments/CenterColumn';
 
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -35,6 +36,12 @@ const useStyles = makeStyles((theme) => ({
 
 function Main() {    
     const classes = useStyles();
+
+    // function CenterColumn(props) {
+    //     switch props:
+    //     return <About />;
+    // }
+
     
     return (
         <>
@@ -48,6 +55,7 @@ function Main() {
                     </Grid>
                     <Grid item xs={6}>
                         <Paper className={classes.paper}>
+                            {/* <CenterColumn /> */}
                             <About />
                         </Paper>
                     </Grid>
