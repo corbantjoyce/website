@@ -1,7 +1,7 @@
 import React from 'react';
-// import { Redirect } from 'react-router-dom';
-import Header from '../Fragments/Header'
-import Journal from '../Fragments/Journal';
+import Header from '../Fragments/Header';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import Journal from '../Fragments/Journal';
 import About from '../Fragments/About';
 import Links from '../Fragments/Links';
 import Home from '../Fragments/Home';
@@ -41,6 +41,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const page = ({match}) => (
+    <div>
+        {match.params.page.toUpperCase()}
+    </div>
+)
+
 function Main() {    
     const classes = useStyles();
 
@@ -48,7 +54,6 @@ function Main() {
     //     switch props:
     //     return <About />;
     // }
-
     
     return (
         <>
@@ -58,26 +63,22 @@ function Main() {
                         <img src={lakelucerne} alt="Field in Lake Lucerne" style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
                     </Grid>
                 </Grid>
-                <Header title="Corban" sections={sections} />
+                <Router>
+                    <Header title="Corban" sections={sections} />
+                </Router>
                 <Grid container spacing={3} className={classes.root}>
                     <Grid item xs={2}>
                         <Paper className={classes.paper}>
                             <Links />
                         </Paper>
                     </Grid>
-                    <Grid item xs={8}>
+                    <Grid item xs={10}>
                         <Paper className={classes.paper}>
-                            {/* <CenterColumn /> */}
+                            {/* <Route path='/:page' component={page}/> */}
                             <Home />
                         </Paper>
                     </Grid>
-                    <Grid item xs={2}>
-                        <Paper className={classes.paper}>
-                            <About />
-                        </Paper>
-                    </Grid>
                 </Grid>
-                <Journal />
             </Container>
         </>
     )
