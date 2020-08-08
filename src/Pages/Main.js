@@ -12,7 +12,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-import { snow } from '../images/snow.jpeg';
+// import snow from '../images/snow.jpeg';
+import lakelucerne from '../images/lakelucerne.jpeg';
+
+
 
 const sections = [
     { title: 'Home', url: '/' },
@@ -52,7 +55,7 @@ function Main() {
             <Container maxWidth="xl">
                 <Grid container spacing={2}>
                     <Grid item xl={12}>
-                        <img src={snow} alt="Snow-covered river in Wyoming" style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/>
+                        <img src={lakelucerne} alt="Field in Lake Lucerne" style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
                     </Grid>
                 </Grid>
                 <Header title="Corban" sections={sections} />
