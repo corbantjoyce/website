@@ -40,6 +40,7 @@ export default function Header(props) {
           {title}
         </Typography>
       </Toolbar>
+      
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         {sections.map((section) => (
           <Link

@@ -12,8 +12,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
+import { snow } from '../images/snow.jpeg';
+
 const sections = [
-    { title: 'Home', url: '' },
+    { title: 'Home', url: '/' },
+    { title: 'About', url: 'about' },
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
     { title: 'Music', url: 'music' },
@@ -47,22 +50,27 @@ function Main() {
     return (
         <>
             <Container maxWidth="xl">
+                <Grid container spacing={2}>
+                    <Grid item xl={12}>
+                        <img src={snow} alt="Snow-covered river in Wyoming" style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/>
+                    </Grid>
+                </Grid>
                 <Header title="Corban" sections={sections} />
                 <Grid container spacing={3} className={classes.root}>
-                    <Grid item xs={3}>
+                    <Grid item xs={2}>
                         <Paper className={classes.paper}>
                             <Links />
                         </Paper>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={8}>
                         <Paper className={classes.paper}>
                             {/* <CenterColumn /> */}
                             <Home />
                         </Paper>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={2}>
                         <Paper className={classes.paper}>
-
+                            <About />
                         </Paper>
                     </Grid>
                 </Grid>

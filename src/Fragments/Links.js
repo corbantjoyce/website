@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     listItem: {
         padding: '5%',
         hover: 'auto',
+        fontSize: '1rem'
     }
   }));
 
