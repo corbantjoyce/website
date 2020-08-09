@@ -1,4 +1,5 @@
 import React from 'react';
+import { MDBBtn } from "mdbreact";
 import Header from '../Fragments/Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import Journal from '../Fragments/Journal';
@@ -49,7 +50,9 @@ function Main() {
     return (
         <>
             <Container maxWidth="xl">
-                <img src={lakelucerne} alt="Field in Lake Lucerne" className={classes.image} style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
+                <MDBBtn>
+                    <img src={lakelucerne} alt="Field in Lake Lucerne" className={classes.image} style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
+                </MDBBtn>
                 <Router>
                     <Header title="CORBAN" sections={sections} />
                 <Grid container spacing={3} className={classes.root}>
