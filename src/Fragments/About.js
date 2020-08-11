@@ -8,7 +8,7 @@ const About = props => {
         <title>
             <h2>Welcome to my page!  It is currently a work in progress.</h2>
         </title>
-        <body>
+        <div style={{margin: '1%'}}>
             <h3 style={{alignItems: 'center'}}>
                 About Me
             </h3>
@@ -24,7 +24,7 @@ const About = props => {
                 <Grid item xs={12}>
                 </Grid>
             </Grid>
-        </body>
+        </div>
     </>
   )
 }
