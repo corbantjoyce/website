@@ -1,5 +1,4 @@
 import React from 'react';
-// import hexsky from './IMG_6471.jpeg';
 import { Helmet } from 'react-helmet';
 import './App.css';
 import Main from './Pages/Main';

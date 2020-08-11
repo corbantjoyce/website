@@ -111,7 +111,7 @@ class Main extends Component {
             <>
                 <Container maxWidth="xl">
                     <Router>
-                    <Header title="CORBAN" sections={sections} />
+                    <Header title="CORBAN JOYCE" sections={sections} />
                     <MDBBtn onClick={() => this.changeBackground()}>
                         <img src={this.state.backgrounds[this.state.currentBackground].src} alt="Field in Lake Lucerne"  
                         style={{marginTop: '2%', maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
