@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     p: {
         fontSize: '1rem',
     }
-  }));
+}));
 
 const About = props => {
     const classes = useStyles();
@@ -24,7 +24,10 @@ const About = props => {
                     </Grid>
                     <Grid item xs={9}>
                         <p className={classes.p}>
-                            In August 2020, I graduate from the Capital One Developer Academy (CODA) program offered by Capital One.  Since this program teaches me to be a full-stack web developer, this website serves the purpose of providing me with practice in that field.  The other purpose of this site is to document information about myself, wherein others may derive various uses, hopefully beneficial.
+                            I graduated from the Ohio State University with a bachelor's degree in Mechanical Engineering in December 2019.  While I love Mechanical Engineering, I realized that I am more interested in engineering as a whole and I seek innovation within it.  When I got the opportunity to learn more about software engineering, I took it.
+                        </p>
+                        <p className={classes.p}>
+                            In August 2020, I graduate from the Capital One Developer Academy (CODA) program offered by Capital One.  The program teaches a select few to be a full-stack software developers, so this website serves the purpose of providing a bit of practice. I will use it to experiment with various technologies.  Another purpose of this site is to document information about myself so that others may find it useful.
                         </p>
                     </Grid>
                     <Grid item xs={12}>
