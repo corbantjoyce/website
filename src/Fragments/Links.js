@@ -4,16 +4,22 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container } from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
     list: {
         listStyleType: 'none',
     },
     listItem: {
-        padding: '4%',
+        padding: '1%',
         hover: 'auto',
         fontSize: '1rem',
-        justifyContent: 'left',
+        justifyContent: 'center',
+    },
+    paper: {
+        background: 'dark',
+        margin: '1%'
     }
   }));
 
@@ -26,26 +32,32 @@ const Links = props => {
                 <h2>External Links</h2>
             </header>
             <Container maxWidth="xl">
-                <ul className={classes.list}>
-                    <li className={classes.listItem}>
-                        <a href="mailto:corbantjoyce@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <MailOutlineIcon />
-                            Email
-                        </a>
-                    </li>
-                    <li className={classes.listItem}>
-                        <a href="https://www.linkedin.com/in/corban-joyce/" target="_blank" rel="noopener noreferrer">
-                            <LinkedInIcon />
-                            LinkedIn
-                        </a>
-                    </li>
-                    <li className={classes.listItem}>
-                        <a href="https://github.com/corbantjoyce" target="_blank" rel="noopener noreferrer">
-                            <GitHubIcon />
-                            Github
-                        </a>
-                    </li>
-                </ul>        
+                <Grid container alignItems="center">
+                    <Grid item xs={4}>
+                        <Paper className={classes.paper}>
+                            <a href="mailto:corbantjoyce@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <MailOutlineIcon />
+                                Email
+                            </a>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <Paper className={classes.paper}>
+                            <a href="https://www.linkedin.com/in/corban-joyce/" target="_blank" rel="noopener noreferrer">
+                                <LinkedInIcon />
+                                LinkedIn
+                            </a>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <Paper className={classes.paper}>
+                            <a href="https://github.com/corbantjoyce" target="_blank" rel="noopener noreferrer">
+                                <GitHubIcon />
+                                Github
+                            </a>
+                        </Paper>
+                    </Grid>
+                </Grid>
             </Container>
         </Fragment>
     )

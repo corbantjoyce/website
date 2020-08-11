@@ -9,7 +9,6 @@ import Home from '../Fragments/Home';
 import Research from '../Fragments/Research';
 
 import { Container } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
@@ -111,19 +110,19 @@ class Main extends Component {
         return (
             <>
                 <Container maxWidth="xl">
+                    <Router>
+                    <Header title="CORBAN" sections={sections} />
                     <MDBBtn onClick={() => this.changeBackground()}>
                         <img src={this.state.backgrounds[this.state.currentBackground].src} alt="Field in Lake Lucerne"  
                         style={{marginTop: '2%', maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
                     </MDBBtn>
-                    <Router>
-                        <Header title="CORBAN" sections={sections} />
-                    <Grid container spacing={3}>
-                        <Grid item xs={2}>
-                            <Paper style={{padding: '2%'}} elevation={3}>
+                    <Grid container spacing={1}>
+                        <Grid item xs={12}>
+                            <Paper style={{padding: '1%'}} elevation={3}>
                                 <Links />
                             </Paper>
                         </Grid>
-                        <Grid item xs={10} >
+                        <Grid item xs={12} >
                             <Paper style={{padding: '2%'}} elevation={3}>
                                 <Switch>
                                     <Route exact path='/' component={Home}/>
