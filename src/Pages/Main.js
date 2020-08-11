@@ -26,8 +26,8 @@ import southdakota from '../images/backgrounds/southdakota.jpeg';
 const sections = [
     { title: 'Home', url: '/' },
     { title: 'About', url: '/about' },
-    { title: 'Music', url: '/music' },
-    { title: 'Videos', url: '/videos' },
+    // { title: 'Music', url: '/music' },
+    // { title: 'Videos', url: '/videos' },
     { title: 'Research', url: '/research' },
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
