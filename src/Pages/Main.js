@@ -7,6 +7,7 @@ import About from '../Fragments/About';
 import Links from '../Fragments/Links';
 import Home from '../Fragments/Home';
 import Research from '../Fragments/Research';
+import Projects from '../Fragments/Projects';
 
 import { Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
@@ -32,7 +33,7 @@ const sections = [
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
-    // { title: 'Personal Projects', url: 'personal' },
+    { title: 'Projects', url: 'projects' },
     // { title: 'Business', url: 'business' },
 ];
 
@@ -128,6 +129,7 @@ class Main extends Component {
                                     <Route exact path='/' component={Home}/>
                                     <Route path='/about' component={About}/>
                                     <Route path='/research' component={Research}/>
+                                    <Route path='/projects' component={Projects}/>
                                 </Switch>
                             </Paper>
                         </Grid>
