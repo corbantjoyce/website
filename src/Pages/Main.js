@@ -23,6 +23,8 @@ import milan from '../images/backgrounds/milan.jpeg';
 import minneapolis from '../images/backgrounds/minneapolis.jpeg';
 import newmexicotexas from '../images/backgrounds/newmexicotexas.jpeg';
 import shenandoah from '../images/backgrounds/shenandoah.jpeg';
+import ludington from '../images/backgrounds/ludington.jpeg';
+
 
 const sections = [
     { title: 'Home', url: '/' },
@@ -78,6 +80,10 @@ class Main extends Component {
                 {
                     src: shenandoah,
                     alt: `shenandoah national park, virginia`
+                },
+                {
+                    src: ludington,
+                    alt: `ludington state park, michigan`
                 },
             ],
             currentBackground: 0,
