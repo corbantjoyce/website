@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     p: {
-        fontSize: '1rem',
+        fontSize: '2rem',
     }
 }));
 

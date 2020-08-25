@@ -22,7 +22,7 @@ import maine from '../images/backgrounds/maine.jpeg';
 import milan from '../images/backgrounds/milan.jpeg';
 import minneapolis from '../images/backgrounds/minneapolis.jpeg';
 import newmexicotexas from '../images/backgrounds/newmexicotexas.jpeg';
-import southdakota from '../images/backgrounds/southdakota.jpeg';
+import shenandoah from '../images/backgrounds/shenandoah.jpeg';
 
 const sections = [
     { title: 'Home', url: '/' },
@@ -45,35 +45,39 @@ class Main extends Component {
             backgrounds: [
                 {
                     src: lakelucerne,
-                    alt: `${lakelucerne}`
+                    alt: `lake lucerne, ohio`
                 },
                 {
                     src: jacksonhole,
-                    alt: `${jacksonhole}`
+                    alt: `jackson hole ski resort, wyoming`
                 },
                 {
                     src: blackhills,
-                    alt: `${blackhills}`
+                    alt: `black hills national park, south dakota`
                 },
                 {
                     src: london,
-                    alt: `${london}`
+                    alt: `london, united kingdom`
                 },
                 {
                     src: maine,
-                    alt: `${milan}`
+                    alt: `acadia national park, maine`
+                },
+                {
+                    src: milan,
+                    alt: `milan, italy`
                 },
                 {
                     src: minneapolis,
-                    alt: `${minneapolis}`
+                    alt: `minneapolis, minnesota`
                 },
                 {
                     src: newmexicotexas,
-                    alt: `${newmexicotexas}`
+                    alt: `el paso, texas`
                 },
                 {
-                    src: southdakota,
-                    alt: `${southdakota}`
+                    src: shenandoah,
+                    alt: `shenandoah national park, virginia`
                 },
             ],
             currentBackground: 0,
@@ -114,8 +118,8 @@ class Main extends Component {
                     <Router>
                     <Header title="CORBAN JOYCE" sections={sections} />
                     <MDBBtn onClick={() => this.changeBackground()}>
-                        <img src={this.state.backgrounds[this.state.currentBackground].src} alt="Field in Lake Lucerne"  
-                        style={{marginTop: '2%', maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
+                        <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt}  
+                        style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
                     </MDBBtn>
                     <Grid container spacing={1}>
                         <Grid item xs={12}>
