@@ -24,10 +24,10 @@ const About = props => {
                     </Grid>
                     <Grid item xs={9}>
                         <p className={classes.p}>
-                            I graduated from the Ohio State University with a bachelor's degree in Mechanical Engineering in December 2019.  While I love Mechanical Engineering, I realized that I am more interested in engineering as a whole and I seek innovation within it.  When I got the opportunity to learn more about software engineering, I took it.
+                            I graduated from the Ohio State University with a bachelor's degree in Mechanical Engineering in December 2019.  While I love Mechanical Engineering, I realized that I just as interested in engineering as a whole as I am in the specific field. My focus and passion is centered more on innovation in general.  When I got the opportunity to learn more about software engineering, I took it.
                         </p>
                         <p className={classes.p}>
-                            In August 2020, I graduate from the Capital One Developer Academy (CODA) program offered by Capital One.  The program teaches a select few to be a full-stack software developers, so this website serves the purpose of providing a bit of practice. I will use it to experiment with various technologies.  Another purpose of this site is to document information about myself so that others may find it useful.
+                            In August 2020, I graduated from the Capital One Developer Academy (CODA) program offered by Capital One.  The program teaches a select few to be a full-stack software developers, so this website serves the purpose of providing a bit of practice. I use it to experiment with various technologies and share aspects of my life.  I hope that others may find it entertaining and/or useful.
                         </p>
                     </Grid>
                     <Grid item xs={12}>
