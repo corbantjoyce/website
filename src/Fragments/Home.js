@@ -20,6 +20,7 @@ const Home = props => {
                 <Grid item xs={12}>
                     <p className={classes.p}>
                         Welcome to my page!  It is currently a work in progress.
+                        Click on the picture at the top of the page to cycle through panoramic pictures I've taken over the course of my life.
                         Navigate to other parts of the site by clicking on one of the tabs above. 
                     </p>
                 </Grid>
