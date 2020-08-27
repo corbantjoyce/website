@@ -8,6 +8,9 @@ import Links from '../Fragments/Links';
 import Home from '../Fragments/Home';
 import Research from '../Fragments/Research';
 import Projects from '../Fragments/Projects';
+import Videos from '../Fragments/Videos';
+import Music from '../Fragments/Music';
+
 
 import { Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
@@ -29,8 +32,8 @@ import ludington from '../images/backgrounds/ludington.jpeg';
 const sections = [
     { title: 'Home', url: '/' },
     { title: 'About', url: '/about' },
-    // { title: 'Music', url: '/music' },
-    // { title: 'Videos', url: '/videos' },
+    { title: 'Music', url: '/music' },
+    { title: 'Videos', url: '/videos' },
     { title: 'Research', url: '/research' },
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
@@ -134,12 +137,14 @@ class Main extends Component {
                             </Paper>
                         </Grid>
                         <Grid item xs={12} >
-                            <Paper style={{padding: '2%'}} elevation={3}>
+                            <Paper style={{padding: '2%', marginBottom: '1%'}} elevation={3}>
                                 <Switch>
                                     <Route exact path='/' component={Home}/>
                                     <Route path='/about' component={About}/>
                                     <Route path='/research' component={Research}/>
                                     <Route path='/projects' component={Projects}/>
+                                    <Route path='/videos' component={Videos}/>
+                                    <Route path='/music' component={Music}/>
                                 </Switch>
                             </Paper>
                         </Grid>
