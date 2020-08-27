@@ -9,14 +9,14 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const Videos = props => {
+const Music = props => {
     const classes = useStyles();
 
     return (
         <>
             <div style={{margin: '1%'}}>
                 <h2 style={{alignItems: 'center'}}>
-                    Videos
+                    Music
                 </h2>
                 <Grid container spacing={2}>
                     <Grid item xs={3}>
@@ -35,4 +35,4 @@ const Videos = props => {
     )
 }
 
-export default Videos;
+export default Music;
