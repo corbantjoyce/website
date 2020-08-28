@@ -11,7 +11,6 @@ import Projects from '../Fragments/Projects';
 import Videos from '../Fragments/Videos';
 import Music from '../Fragments/Music';
 
-
 import { Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -123,16 +122,18 @@ class Main extends Component {
     render() {
         return (
             <>
+                <Router>
                 <Container maxWidth="xl">
-                    <Router>
                     <Header title="CORBAN JOYCE" sections={sections} />
-                    <MDBBtn onClick={() => this.changeBackground()}>
-                        <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt}  
-                        style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '4px'}}/>
-                    </MDBBtn>
+                </Container>
+                <MDBBtn onClick={() => this.changeBackground()} style={{width: '102%'}}>
+                    <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt}  
+                    style={{maxWidth: '100%', maxHeight: '100%'}}/>
+                </MDBBtn>
+                <Container maxWidth="xl">
                     <Grid container spacing={1}>
                         <Grid item xs={12}>
-                            <Paper style={{padding: '1%'}} elevation={3}>
+                            <Paper style={{padding: '0.5%'}} elevation={3}>
                                 <Links />
                             </Paper>
                         </Grid>
@@ -149,8 +150,8 @@ class Main extends Component {
                             </Paper>
                         </Grid>
                     </Grid>
-                    </Router>
                 </Container>
+                </Router>
             </>
         )
     }
