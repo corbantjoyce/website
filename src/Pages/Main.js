@@ -99,7 +99,7 @@ class Main extends Component {
                 padding: '1%',
                 textAlign: 'center',
                 color: 'white',
-                marginBottom: '1%'
+                marginBottom: '1%',
             },
             image: {
                 marginTop: '1%',
@@ -133,12 +133,12 @@ class Main extends Component {
                 <Container maxWidth="xl">
                     <Grid container spacing={1}>
                         <Grid item xs={12}>
-                            <Paper style={{padding: '0.5%'}} elevation={3}>
+                            <Paper style={{padding: '0.5%', borderRadius: '0px'}} elevation={3}>
                                 <Links />
                             </Paper>
                         </Grid>
                         <Grid item xs={12} >
-                            <Paper style={{padding: '2%', marginBottom: '1%'}} elevation={3}>
+                            <Paper style={{padding: '2%', marginBottom: '1%', borderRadius: '0px'}} elevation={3}>
                                 <Switch>
                                     <Route exact path='/' component={Home}/>
                                     <Route path='/about' component={About}/>
