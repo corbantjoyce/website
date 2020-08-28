@@ -1,5 +1,4 @@
 import React from 'react';
-import corbanpic from '../images/IMG_0049.jpg';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -19,13 +18,10 @@ const Videos = props => {
                     Videos
                 </h2>
                 <Grid container spacing={2}>
-                    <Grid item xs={3}>
-                        <img src={corbanpic} alt="Corban Joyce" style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/>
-                    </Grid>
-                    <Grid item xs={9}>
-                        <p className={classes.p}>
-                        
-                        </p>
+                    <Grid item xs={12}>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PrcoUUKzbIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{maxWidth: '100%', maxHeight: '100%'}}></iframe>
+                        </div>
                     </Grid>
                     <Grid item xs={12}>
                     </Grid>
