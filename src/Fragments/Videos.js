@@ -19,11 +19,12 @@ const Videos = props => {
                 </h2>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
-                        <div>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PrcoUUKzbIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{maxWidth: '100%', maxHeight: '100%'}}></iframe>
-                        </div>
+                        <p className={classes.p}>
+                            "DEEP DIVE FIVE"
+                        </p>
                     </Grid>
                     <Grid item xs={12}>
+                        <iframe title="Juggling: Deep Dive Five by Thomas" width="560" height="315" src="https://www.youtube.com/embed/PrcoUUKzbIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{maxWidth: '100%', maxHeight: '100%'}}></iframe>
                     </Grid>
                 </Grid>
             </div>
