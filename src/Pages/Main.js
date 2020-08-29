@@ -127,7 +127,7 @@ class Main extends Component {
                     <Header title="CORBAN JOYCE" sections={sections} />
                 </Container>
                 <MDBBtn onClick={() => this.changeBackground()} style={{width: '102%'}}>
-                    <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt}  
+                    <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt.toLocaleUpperCase()}  
                     style={{maxWidth: '100%', maxHeight: '100%'}}/>
                 </MDBBtn>
                 <Container maxWidth="xl">
@@ -140,12 +140,12 @@ class Main extends Component {
                         <Grid item xs={12} >
                             <Paper style={{padding: '2%', marginBottom: '1%', borderRadius: '0px'}} elevation={3}>
                                 <Switch>
-                                    <Route exact path='/' component={Home}/>
-                                    <Route path='/about' component={About}/>
-                                    <Route path='/research' component={Research}/>
-                                    <Route path='/projects' component={Projects}/>
-                                    <Route path='/videos' component={Videos}/>
-                                    <Route path='/music' component={Music}/>
+                                    <Route exact path='/' component={Home} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                    <Route path='/about' component={About} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                    <Route path='/research' component={Research} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                    <Route path='/projects' component={Projects} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                    <Route path='/videos' component={Videos} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                    <Route path='/music' component={Music} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                 </Switch>
                             </Paper>
                         </Grid>

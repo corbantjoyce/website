@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     p: {
         fontSize: '1.5rem',
+        justifyContent: 'center',
     }
 }));
 
@@ -19,9 +20,17 @@ const Home = props => {
             <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <p className={classes.p}>
+                        Are you registered to vote?  You can use this link if not:
+                        <a href="https://www.vote.gov" target="_blank" rel="noopener noreferrer"> vote.gov</a>.  It takes like 5 minutes.
+                    </p>
+                    <p className={classes.p}>
                         Welcome to my page!  It is currently a work in progress.
-                        Click on the picture at the top of the page to cycle through panoramic pictures I've taken over the course of my life.
-                        Navigate to other parts of the site by clicking on one of the tabs above. 
+                    </p>
+                    <p className={classes.p}>
+                        Change the background image at the top by clicking or tapping it.  All photos were taken on my iPhone.
+                    </p>
+                    <p className={classes.p}>
+                        Navigate to other sections of the site by selecting one of the tabs above. 
                     </p>
                 </Grid>
             </Grid>
