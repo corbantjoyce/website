@@ -3,7 +3,6 @@ import { MDBBtn } from "mdbreact";
 import Header from '../Fragments/Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from '../Fragments/About';
-import Links from '../Fragments/Links';
 import Home from '../Fragments/Home';
 import Research from '../Fragments/Research';
 import Projects from '../Fragments/Projects';
@@ -133,17 +132,12 @@ class Main extends Component {
                 <Container maxWidth="xl">
                     <Header title="CORBAN JOYCE" sections={sections} />
                 </Container>
-                <MDBBtn onClick={() => this.changeBackground()} style={{width: '102%'}}>
+                <MDBBtn onClick={() => this.changeBackground()} style={{width: '100%'}}>
                     <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt.toLocaleUpperCase()}  
                     style={{maxWidth: '100%', maxHeight: '100%'}}/>
                 </MDBBtn>
-                <Container maxWidth="xl">
+                <Container maxWidth="xl" style={{paddingBottom: '8px', marginTop: '1%'}}>
                     <Grid container spacing={1}>
-                        <Grid item xs={12}>
-                            <Paper style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}} elevation={3}>
-                                <Links />
-                            </Paper>
-                        </Grid>
                         <Grid item xs={12}>
                             <Paper elevation={3} style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}}>
                                 <Switch>

@@ -38,6 +38,7 @@ const Links = props => {
                         <Paper className={classes.paper}>
                             <a href="mailto:corbantjoyce@gmail.com" target="_blank" rel="noopener noreferrer">
                                 <MailOutlineIcon />
+                                <span>  </span>
                                 Email
                             </a>
                         </Paper>
@@ -46,6 +47,7 @@ const Links = props => {
                         <Paper className={classes.paper}>
                             <a href="https://www.linkedin.com/in/corban-joyce/" target="_blank" rel="noopener noreferrer">
                                 <LinkedInIcon />
+                                <span>  </span>
                                 LinkedIn
                             </a>
                         </Paper>
@@ -54,6 +56,7 @@ const Links = props => {
                         <Paper className={classes.paper}>
                             <a href="https://github.com/corbantjoyce" target="_blank" rel="noopener noreferrer">
                                 <GitHubIcon />
+                                <span>  </span>
                                 Github
                             </a>
                         </Paper>

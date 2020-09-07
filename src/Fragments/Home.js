@@ -1,6 +1,8 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import Links from '../Fragments/Links';
+import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
     p: {
@@ -14,7 +16,12 @@ const Home = props => {
 
     return (
         <>
-            <h2 style={{alignItems: 'center'}}>
+            <Grid item xs={12}>
+                <Paper style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}} elevation={3}>
+                    <Links />
+                </Paper>
+            </Grid>
+            <h2 style={{alignItems: 'center', marginTop: '1%'}}>
                 Home
             </h2>
             <Grid container spacing={2}>

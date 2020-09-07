@@ -40,7 +40,7 @@ const Music = props => {
                         </Grid>
                         <Grid item xs={6}>
                             <p className={classes.p}>
-                                I have always loved music, as many people do.  My passion has driven me to analyze the meaning of music, and I became an editor for <a href="https://www.genius.com/unannotatedunmastered" target="_blank" rel="noopener noreferrer">Genius.com</a> in the spring of 2016.  My <a href="https://www.genius.com/unannotatedunmastered" target="_blank" rel="noopener noreferrer">profile</a> contains the majority of my work for the site.  While I used to be extremely active making annotations and participating in forums, I have not been nearly as active in recent years.
+                                I have always loved music, as many people do.  My passion has driven me to analyze the meaning of music, and I became an editor for <a href="https://www.genius.com/" target="_blank" rel="noopener noreferrer">Genius.com</a> in the spring of 2016.  <a href="https://www.genius.com/unannotatedunmastered" target="_blank" rel="noopener noreferrer">My profile</a> contains the majority of my work for the site.  While I used to be extremely active making annotations and participating in forums, I have not been nearly as active in recent years.
                             </p>
                         </Grid>
                     </Grid>

@@ -2,6 +2,8 @@ import React from 'react';
 import corbanpic from '../images/IMG_0049.jpg';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import Links from '../Fragments/Links';
+import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
     p: {
@@ -14,6 +16,11 @@ const About = props => {
 
     return (
         <>
+            <Grid item xs={12}>
+                <Paper style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}} elevation={3}>
+                    <Links />
+                </Paper>
+            </Grid>
             <div style={{margin: '1%'}}>
                 <h2 style={{alignItems: 'center'}}>
                     About Me
