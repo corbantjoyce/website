@@ -91,22 +91,6 @@ class Main extends Component {
             root: {
                 flexGrow: 1,
             },
-            paper: {
-                padding: '1%',
-                textAlign: 'center',
-                backgroundColor: 'darkgray',
-                fontColor: 'white',
-                marginBottom: '1%',
-                borderRadius: '0px',
-            },
-            page: {
-                padding: '20%',
-                textAlign: 'center',
-                backgroundColor: 'darkgray',
-                fontColor: 'white',
-                marginBottom: '1%',
-                borderRadius: '0px',
-            },
             image: {
                 marginTop: '1%',
             }
