@@ -20,7 +20,7 @@ const Home = props => {
             <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <p className={classes.p}>
-                        Welcome to my page!  It is currently a work in progress.  The tech stack used for this site is React and node.js, and if I implement a backend, I will either use MongoDB or DynamoDB.
+                        Welcome to my page!  It is a work in progress.  The tech stack used for this site is React and node.js and if I implement a backend, I will either use MongoDB or DynamoDB.
                     </p>
                     <p className={classes.p}>
                         If you are a US citizen, make sure you are registered to vote:

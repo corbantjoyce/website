@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { MDBBtn } from "mdbreact";
 import Header from '../Fragments/Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import Journal from '../Fragments/Journal';
 import About from '../Fragments/About';
 import Links from '../Fragments/Links';
 import Home from '../Fragments/Home';
@@ -38,11 +37,9 @@ const sections = [
     // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
     { title: 'Projects', url: 'projects' },
-    // { title: 'Business', url: 'business' },
 ];
 
 class Main extends Component {    
-
     constructor() {
         super();
         this.state = {
@@ -90,7 +87,7 @@ class Main extends Component {
             ],
             currentBackground: 0,
         };
-        this.uri = 'https://corbanjoyce.com';
+        this.uri = 'https://www.corbanjoyce.com';
         this.classes = {
             root: {
                 flexGrow: 1,
@@ -98,8 +95,18 @@ class Main extends Component {
             paper: {
                 padding: '1%',
                 textAlign: 'center',
-                color: 'white',
+                backgroundColor: 'darkgray',
+                fontColor: 'white',
                 marginBottom: '1%',
+                borderRadius: '0px',
+            },
+            page: {
+                padding: '20%',
+                textAlign: 'center',
+                backgroundColor: 'darkgray',
+                fontColor: 'white',
+                marginBottom: '1%',
+                borderRadius: '0px',
             },
             image: {
                 marginTop: '1%',
@@ -133,12 +140,12 @@ class Main extends Component {
                 <Container maxWidth="xl">
                     <Grid container spacing={1}>
                         <Grid item xs={12}>
-                            <Paper style={{padding: '0.5%', borderRadius: '0px'}} elevation={3}>
+                            <Paper style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}} elevation={3}>
                                 <Links />
                             </Paper>
                         </Grid>
-                        <Grid item xs={12} >
-                            <Paper style={{padding: '2%', marginBottom: '1%', borderRadius: '0px'}} elevation={3}>
+                        <Grid item xs={12}>
+                            <Paper elevation={3} style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}}>
                                 <Switch>
                                     <Route exact path='/' component={Home} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                     <Route path='/about' component={About} cb={this.state.backgrounds[this.state.currentBackground].src}/>

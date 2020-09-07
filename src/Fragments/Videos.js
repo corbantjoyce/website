@@ -23,9 +23,9 @@ const Videos = props => {
         }
     ]
 
-    for (const [index, value] of videos.entries()) {
-        //
-    }
+    // for (const [index, value] of videos.entries()) {
+    //     //
+    // }
 
 
     return (

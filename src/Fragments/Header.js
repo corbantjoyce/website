@@ -11,6 +11,8 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbarTitle: {
     flex: 1,
+    // fontWeight: 'bold',
+    fontSize: '1.75rem'
   },
   toolbarSecondary: {
     justifyContent: 'space-between',
@@ -19,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
   toolbarLink: {
     padding: theme.spacing(1),
     flexShrink: 0,
+    fontWeight: 'bold',
+    fontSize: '1rem'
   },
 }));
 

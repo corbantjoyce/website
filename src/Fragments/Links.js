@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         background: 'dark',
+        color: 'dark',
         margin: '1%'
     }
   }));
