@@ -17,7 +17,7 @@ const About = props => {
     return (
         <>
             <Grid item xs={12}>
-                <Paper style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}} elevation={3}>
+                <Paper style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}}>
                     <Links />
                 </Paper>
             </Grid>
