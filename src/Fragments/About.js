@@ -4,10 +4,14 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Links from '../Fragments/Links';
 import Paper from '@material-ui/core/Paper';
+// import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 const useStyles = makeStyles((theme) => ({
     p: {
-        fontSize: '1.5rem',
+        // fontSize: RFPercentage(5),
+    },
+    image: {
+
     }
 }));
 
@@ -27,7 +31,7 @@ const About = props => {
                 </h2>
                 <Grid container spacing={2}>
                     <Grid item >
-                        <img src={corbanpic} alt="Corban Joyce" style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/>
+                        <img src={corbanpic} alt="Corban Joyce" className={classes.p} style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/>
                     </Grid>
                     <Grid item >
                         <p className={classes.p}>
