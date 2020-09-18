@@ -3,10 +3,11 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Links from '../Fragments/Links';
 import Paper from '@material-ui/core/Paper';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 const useStyles = makeStyles((theme) => ({
     p: {
-        fontSize: '1.5rem',
+        fontSize: RFPercentage(5),
         justifyContent: 'center',
     }
 }));
