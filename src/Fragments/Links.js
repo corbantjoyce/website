@@ -20,9 +20,13 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         background: 'dark',
         color: 'dark',
-        margin: '1%'
+        margin: '2%',
+        padding: '1%'
+    },
+    marginBottom: {
+        marginBottom: '0.5%'
     }
-  }));
+}));
 
 const Links = props => {
     const classes = useStyles();

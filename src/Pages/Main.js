@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { MDBBtn } from "mdbreact";
 import Header from '../Fragments/Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import About from '../Fragments/About';
 import Home from '../Fragments/Home';
 import Research from '../Fragments/Research';
@@ -25,6 +26,7 @@ import newmexicotexas from '../images/backgrounds/newmexicotexas.jpeg';
 import shenandoah from '../images/backgrounds/shenandoah.jpeg';
 import ludington from '../images/backgrounds/ludington.jpeg';
 
+// let MediaQuery = require('react-responsive');
 
 const sections = [
     { title: 'Home', url: '/' },

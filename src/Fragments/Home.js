@@ -17,13 +17,13 @@ const Home = props => {
     return (
         <>
             <Grid item xs={12}>
-                <Paper style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}}>
+                <Paper style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}} elevation={0}>
                     <Links />
                 </Paper>
             </Grid>
-            <h2 style={{alignItems: 'center', marginTop: '1%'}}>
-                Home
-            </h2>
+            <header>
+                <h2>Home</h2>
+            </header>
             <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <p className={classes.p}>

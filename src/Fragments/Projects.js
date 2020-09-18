@@ -36,7 +36,7 @@ const Projects = props => {
                     </Grid>
                     <Grid item xs={12}>
                         <p className={classes.p}>
-                            <img src={sunsetpaviliongif} alt="Sunset Pavilion Gif" style={{maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/>
+                            <img src={sunsetpaviliongif} alt="Sunset Pavilion Gif" style={{maxWidth: '95%', maxHeight: '95%', borderRadius: '4px'}}/>
                         </p>
                     </Grid>
                 </Grid>
