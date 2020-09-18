@@ -20,9 +20,9 @@ const Projects = props => {
             <Grid container spacing={1}>
                 <Grid container spacing={3}>
                     <Grid item xs={4}>
-                        <h3 className={classes.p}>
+                        <p className={classes.p}>
                             Cleveland, OH
-                        </h3>
+                        </p>
                     </Grid>
                     <Grid item xs={4}>
                         <p className={classes.p}>
