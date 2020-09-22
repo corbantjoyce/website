@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b45c7203.chunk.css",
+    "main.js": "/static/js/main.f03ed4ac.chunk.js",
+    "main.js.map": "/static/js/main.f03ed4ac.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c9a36f42.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c9a36f42.js.map",
+    "static/js/2.75f4a691.chunk.js": "/static/js/2.75f4a691.chunk.js",
+    "static/js/2.75f4a691.chunk.js.map": "/static/js/2.75f4a691.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f42865a0f3cafb4c538a7c182b81ca38.js": "/precache-manifest.f42865a0f3cafb4c538a7c182b81ca38.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b45c7203.chunk.css.map": "/static/css/main.b45c7203.chunk.css.map",
+    "static/js/2.75f4a691.chunk.js.LICENSE.txt": "/static/js/2.75f4a691.chunk.js.LICENSE.txt",
+    "static/media/IMG_0049.jpg": "/static/media/IMG_0049.2709696a.jpg",
+    "static/media/lakelucerne.jpeg": "/static/media/lakelucerne.15df478a.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9a36f42.js",
+    "static/js/2.75f4a691.chunk.js",
+    "static/css/main.b45c7203.chunk.css",
+    "static/js/main.f03ed4ac.chunk.js"
+  ]
+}
