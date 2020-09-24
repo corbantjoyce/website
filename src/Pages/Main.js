@@ -128,7 +128,7 @@ class Main extends Component {
                             <Paper elevation={3} style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}}>
                                 <Switch>
                                     <Route exact path='/' component={Home} cb={this.state.backgrounds[this.state.currentBackground].src}/>
-                                    <Route exact path='/about' component={About} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                    <Route path='/about' component={About} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                     <Route path='/research' component={Research} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                     <Route path='/projects' component={Projects} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                     <Route path='/videos' component={Videos} cb={this.state.backgrounds[this.state.currentBackground].src}/>
