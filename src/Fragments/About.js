@@ -1,5 +1,5 @@
 import React from 'react';
-import corbanpic from '../images/IMG_0049.jpg';
+// import corbanpic from '../images/IMG_0049.jpg';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Links from '../Fragments/Links';
@@ -31,7 +31,7 @@ const About = props => {
                 </h2>
                 <Grid container spacing={2}>
                     <Grid item xs={3}>
-                        <img src={corbanpic} alt="Corban Joyce" className={classes.p} style={{justifyContent: 'center', maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/>
+                        {/* <img src={corbanpic} alt="Corban Joyce" className={classes.p} style={{justifyContent: 'center', maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/> */}
                     </Grid>
                     <Grid item >
                         <p className={classes.p}>
