@@ -28,17 +28,10 @@ const Home = props => {
             <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <p className={classes.p}>
-                        Welcome to my page!  Currently, due to unprecedented issues with AWS, all other pages are not loading.  The tech stack used for this site is React and node.js and if I implement a backend, I will either use MongoDB or DynamoDB.
+                        Welcome to my page!  The tech stack used for this site is React and node.js, and if I implement a backend, I will either use MongoDB or DynamoDB.
                     </p>
                     <p className={classes.p}>
-                        If you are a US citizen, make sure you are registered to vote:
-                        <a href="https://www.vote.gov" target="_blank" rel="noopener noreferrer"> vote.gov</a>.  It takes like 5 minutes.
-                    </p>
-                    <p className={classes.p}>
-                        Change the background image at the top by clicking or tapping it.  All photos were taken on my iPhone.
-                    </p>
-                    <p className={classes.p}>
-                        Navigate to other sections of the site by selecting one of the tabs above. 
+                        Cycle the image at the top by clicking or tapping it.  All photos were taken on my iPhone.
                     </p>
                 </Grid>
             </Grid>
