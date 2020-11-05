@@ -37,7 +37,7 @@ const sections = [
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
-    { title: 'Projects', url: 'projects' },
+    { title: 'Projects', url: '/projects' },
 ];
 
 class Main extends Component {    
