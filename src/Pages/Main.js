@@ -9,6 +9,7 @@ import Research from '../Fragments/Research';
 import Projects from '../Fragments/Projects';
 import Videos from '../Fragments/Videos';
 import Music from '../Fragments/Music';
+import Blog from '../Fragments/Blog';
 
 import { Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
@@ -38,6 +39,7 @@ const sections = [
     // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
     { title: 'Projects', url: '/projects' },
+    { title: 'Blog', url: '/blog' },
 ];
 
 class Main extends Component {    
@@ -116,7 +118,7 @@ class Main extends Component {
             <>
                 <Router>
                 <Container maxWidth="xl">
-                    <Header title="CORBAN JOYCE" sections={sections} />
+                    <Header title="Corban Joyce's Website" sections={sections} />
                 </Container>
                 <MDBBtn onClick={() => this.changeBackground()} style={{width: '100%'}}>
                     <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt.toLocaleUpperCase()}  
@@ -133,6 +135,7 @@ class Main extends Component {
                                     <Route path='/projects' component={Projects} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                     <Route path='/videos' component={Videos} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                     <Route path='/music' component={Music} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                    <Route path='/blog' component={Blog} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                 </Switch>
                             </Paper>
                         </Grid>
