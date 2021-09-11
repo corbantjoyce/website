@@ -2,7 +2,7 @@ import React from 'react';
 // import corbanpic from '../images/IMG_0049.jpg';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Links from '../Fragments/Links';
+import Links from '../components/Links';
 import Paper from '@material-ui/core/Paper';
 // import { RFPercentage } from 'react-native-responsive-fontsize';
 

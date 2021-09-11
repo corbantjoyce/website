@@ -2,9 +2,9 @@ import React from 'react';
 // import corbanpic from '../images/IMG_0049.jpg';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Links from '../Fragments/Links';
+import Links from '../components/Links';
 import Paper from '@material-ui/core/Paper';
-import { text, photos, links } from '../database/blog_posts/goldenvoting/03042020_GoldenVoting.js';
+import { text } from '../database/blog_posts/goldenvoting/03042020_GoldenVoting.js';
 
 const useStyles = makeStyles((theme) => ({
     p: {

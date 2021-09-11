@@ -18,8 +18,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
     },
     paper: {
-        background: 'dark',
-        color: 'dark',
         margin: '2%',
         padding: '1%'
     },
@@ -33,10 +31,7 @@ const Links = props => {
 
     return (
         <Fragment>
-            <header>
-                <h2>External Links</h2>
-            </header>
-            <Container maxWidth="xl">
+            <Container maxWidth="xl" style={{backgroundColor: 'transparent'}}>
                 <Grid container alignItems="center">
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
