@@ -5,7 +5,7 @@ import Links from '../components/Links';
 
 const useStyles = makeStyles((theme) => ({
     p: {
-        // fontSize: RFPercentage(5),
+        display: 'flex',
         justifyContent: 'center',
     }
 }));
@@ -15,8 +15,8 @@ const Home = props => {
 
     return (
         <>
-            <Grid container spacing={2}>
-                <Grid item xs={12}>
+            <Grid container>
+                <Grid item>
                     <p className={classes.p}>
                         Welcome to my page!  I built it using React.js.
                     </p>
@@ -25,7 +25,7 @@ const Home = props => {
                     </p>
                 </Grid>
             </Grid>
-            <Grid item xs={12} style={{backgroundColor: 'lightblue', padding: '1%'}}>
+            <Grid item style={{backgroundColor: 'lightblue'}}>
                 <Links />
             </Grid>
         </>

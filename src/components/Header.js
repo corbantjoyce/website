@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
@@ -11,8 +10,8 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbarTitle: {
     flex: 1,
-    // fontWeight: 'bold',
-    fontSize: '1.75rem'
+    fontSize: '1.75rem',
+    color: 'lightblue'
   },
   toolbarSecondary: {
     justifyContent: 'space-between',
@@ -22,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
     flexShrink: 0,
     fontWeight: 'bold',
-    fontSize: '1rem'
+    fontSize: '1rem',
+    color: 'lightblue'
   },
 }));
 
@@ -33,16 +33,17 @@ export default function Header(props) {
   return (
     <Fragment>
       <Toolbar className={classes.toolbar}>
-        <Typography
-          component="h2"
-          variant="h5"
+        <Link
           color="inherit"
           align="center"
-          noWrap
+          component="h2"
+          variant="h5"
+          key={title}
+          to="/"
           className={classes.toolbarTitle}
         >
           {title}
-        </Typography>
+        </Link>
       </Toolbar>
       
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>

@@ -11,18 +11,9 @@ const useStyles = makeStyles((theme) => ({
     list: {
         listStyleType: 'none',
     },
-    listItem: {
-        padding: '1%',
-        hover: 'auto',
-        fontSize: '1rem',
-        justifyContent: 'center',
-    },
     paper: {
         margin: '2%',
         padding: '1%'
-    },
-    marginBottom: {
-        marginBottom: '0.5%'
     }
 }));
 

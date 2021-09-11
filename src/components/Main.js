@@ -30,16 +30,15 @@ import ludington from '../images/backgrounds/ludington.jpeg';
 // let MediaQuery = require('react-responsive');
 
 const sections = [
-    { title: 'HOME', url: '/' },
     { title: 'MUSIC', url: '/music' },
-    { title: 'VIDEOS', url: '/videos' },
-    { title: 'RESEARCH', url: '/research' },
+    // { title: 'VIDEOS', url: '/videos' },
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
     { title: 'PROJECTS', url: '/projects' },
-    { title: 'BLOG', url: '/blog' },
+    { title: 'RESEARCH', url: '/research' },
     { title: 'ABOUT', url: '/about' },
+    { title: 'BLOG', url: '/blog' },
 ];
 
 class Main extends Component {    
@@ -124,10 +123,10 @@ class Main extends Component {
                         <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt.toLocaleUpperCase()}  
                         style={{maxWidth: '100%', maxHeight: '100%'}}/>
                     </MDBBtn>
-                    <Container maxWidth="xl" style={{paddingBottom: '8px', marginTop: '1%'}}>
+                    <Container maxWidth="xl" style={{paddingBottom: '8px'}}>
                         <Grid container spacing={1}>
-                            <Grid item xs={12}>
-                                <Paper elevation={3} style={{borderRadius: '0px', backgroundColor: 'lightblue', color: 'white',}}>
+                            <Grid item>
+                                <Paper elevation={0} style={{borderRadius: '0px', backgroundColor: 'lightblue', color: 'white',}}>
                                     <Switch>
                                         <Route exact path='/' component={Home} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                         <Route path='/about' component={About} cb={this.state.backgrounds[this.state.currentBackground].src}/>
