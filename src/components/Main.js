@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { MDBBtn } from "mdbreact";
-import Header from '../Fragments/Header';
+import Header from './Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import About from '../Fragments/About';
-import Home from '../Fragments/Home';
-import Research from '../Fragments/Research';
-import Projects from '../Fragments/Projects';
-import Videos from '../Fragments/Videos';
-import Music from '../Fragments/Music';
-import Blog from '../Fragments/Blog';
+import About from './About';
+import Home from './Home';
+import Research from './Research';
+import Projects from './Projects';
+import Videos from './Videos';
+import Music from './Music';
+import Blog from './Blog';
 
 import { Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
@@ -30,16 +30,16 @@ import ludington from '../images/backgrounds/ludington.jpeg';
 // let MediaQuery = require('react-responsive');
 
 const sections = [
-    { title: 'Home', url: '/' },
-    { title: 'About', url: '/about' },
-    { title: 'Music', url: '/music' },
-    { title: 'Videos', url: '/videos' },
-    { title: 'Research', url: '/research' },
+    { title: 'HOME', url: '/' },
+    { title: 'MUSIC', url: '/music' },
+    // { title: 'VIDEOS', url: '/videos' },
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
-    { title: 'Projects', url: '/projects' },
-    { title: 'Blog', url: '/blog' },
+    // { title: 'PROJECTS', url: '/projects' },
+    { title: 'RESEARCH', url: '/research' },
+    { title: 'ABOUT', url: '/about' },
+    // { title: 'BLOG', url: '/blog' },
 ];
 
 class Main extends Component {    
@@ -117,30 +117,33 @@ class Main extends Component {
         return (
             <>
                 <Router>
-                <Container maxWidth="xl">
-                    <Header title="Corban Joyce's Website" sections={sections} />
-                </Container>
-                <MDBBtn onClick={() => this.changeBackground()} style={{width: '100%'}}>
-                    <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt.toLocaleUpperCase()}  
-                    style={{maxWidth: '100%', maxHeight: '100%'}}/>
-                </MDBBtn>
-                <Container maxWidth="xl" style={{paddingBottom: '8px', marginTop: '1%'}}>
-                    <Grid container spacing={1}>
-                        <Grid item xs={12}>
-                            <Paper elevation={3} style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}}>
-                                <Switch>
-                                    <Route exact path='/' component={Home} cb={this.state.backgrounds[this.state.currentBackground].src}/>
-                                    <Route path='/about' component={About} cb={this.state.backgrounds[this.state.currentBackground].src}/>
-                                    <Route path='/research' component={Research} cb={this.state.backgrounds[this.state.currentBackground].src}/>
-                                    <Route path='/projects' component={Projects} cb={this.state.backgrounds[this.state.currentBackground].src}/>
-                                    <Route path='/videos' component={Videos} cb={this.state.backgrounds[this.state.currentBackground].src}/>
-                                    <Route path='/music' component={Music} cb={this.state.backgrounds[this.state.currentBackground].src}/>
-                                    <Route path='/blog' component={Blog} cb={this.state.backgrounds[this.state.currentBackground].src}/>
-                                </Switch>
-                            </Paper>
+                    <Container maxWidth="xl">
+                        <Header title="CORBAN JOYCE" sections={sections} />
+                    </Container>
+                    <MDBBtn onClick={() => this.changeBackground()} className="p-0" style={{width: '101%'}}>
+                        <img 
+                            src={this.state.backgrounds[this.state.currentBackground].src} 
+                            alt={this.state.backgrounds[this.state.currentBackground].alt.toLocaleUpperCase()}  
+                            style={{maxWidth: '100%', maxHeight: '100%'}}
+                        />
+                    </MDBBtn>
+                    <Container maxWidth="xl">
+                        <Grid container spacing={1} style={{justifyContent: 'center'}}>
+                            <Grid item>
+                                <Paper elevation={0} style={{borderRadius: '0px', backgroundColor: 'lightblue', color: 'white'}}>
+                                    <Switch>
+                                        <Route exact path='/' component={Home} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                        <Route path='/about' component={About} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                        <Route path='/research' component={Research} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                        <Route path='/projects' component={Projects} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                        <Route path='/videos' component={Videos} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                        <Route path='/music' component={Music} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                        <Route path='/blog' component={Blog} cb={this.state.backgrounds[this.state.currentBackground].src}/>
+                                    </Switch>
+                                </Paper>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                </Container>
+                    </Container>
                 </Router>
             </>
         )

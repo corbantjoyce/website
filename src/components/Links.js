@@ -11,20 +11,12 @@ const useStyles = makeStyles((theme) => ({
     list: {
         listStyleType: 'none',
     },
-    listItem: {
-        padding: '1%',
-        hover: 'auto',
-        fontSize: '1rem',
-        justifyContent: 'center',
-    },
     paper: {
-        background: 'dark',
-        color: 'dark',
         margin: '2%',
         padding: '1%'
     },
-    marginBottom: {
-        marginBottom: '0.5%'
+    icon: {
+        color: 'lightblue'
     }
 }));
 
@@ -33,14 +25,11 @@ const Links = props => {
 
     return (
         <Fragment>
-            <header>
-                <h2>External Links</h2>
-            </header>
-            <Container maxWidth="xl">
+            <Container style={{backgroundColor: 'transparent', padding: '2%'}}>
                 <Grid container alignItems="center">
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
-                            <a href="mailto:corbantjoyce@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <a href="mailto:corbantjoyce@gmail.com" target="_blank" rel="noopener noreferrer" className={classes.icon}>
                                 <MailOutlineIcon />
                                 <span>  </span>
                                 Email
@@ -49,7 +38,7 @@ const Links = props => {
                     </Grid>
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
-                            <a href="https://www.linkedin.com/in/corban-joyce/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/corban-joyce/" target="_blank" rel="noopener noreferrer" className={classes.icon}>
                                 <LinkedInIcon />
                                 <span>  </span>
                                 LinkedIn
@@ -58,7 +47,7 @@ const Links = props => {
                     </Grid>
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
-                            <a href="https://github.com/corbantjoyce" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/corbantjoyce" target="_blank" rel="noopener noreferrer" className={classes.icon}>
                                 <GitHubIcon />
                                 <span>  </span>
                                 Github

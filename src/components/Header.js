@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
@@ -11,8 +10,10 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbarTitle: {
     flex: 1,
-    // fontWeight: 'bold',
-    fontSize: '1.75rem'
+    fontSize: '1.75rem',
+    color: 'lightblue',
+    paddingTop: '1%',
+    paddingBottom: '1%',
   },
   toolbarSecondary: {
     justifyContent: 'space-between',
@@ -22,7 +23,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
     flexShrink: 0,
     fontWeight: 'bold',
-    fontSize: '1rem'
+    fontSize: '1rem',
+    color: 'lightblue'
   },
 }));
 
@@ -32,19 +34,17 @@ export default function Header(props) {
 
   return (
     <Fragment>
-      <Toolbar className={classes.toolbar}>
-        <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          className={classes.toolbarTitle}
-        >
-          {title}
-        </Typography>
-      </Toolbar>
-      
+      <Link
+        color="inherit"
+        align="center"
+        component="h2"
+        variant="h2"
+        key={title}
+        to="/"
+        className={classes.toolbarTitle}
+      >
+        {title}
+      </Link>
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         {sections.map((section) => (
           <Link

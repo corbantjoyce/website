@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import './App.css';
-import Main from './Pages/Main';
+import Main from './components/Main';
 
 function App() {
 
