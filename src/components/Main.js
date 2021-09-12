@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { MDBBtn } from "mdbreact";
 import Header from './Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import ReactCrop from 'react-image-crop';
 
 import About from './About';
 import Home from './Home';
@@ -14,6 +15,7 @@ import Blog from './Blog';
 import { Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 //backgrounds
 import lakelucerne from '../images/backgrounds/lakelucerne.jpeg';
@@ -26,8 +28,6 @@ import minneapolis from '../images/backgrounds/minneapolis.jpeg';
 import newmexicotexas from '../images/backgrounds/newmexicotexas.jpeg';
 import shenandoah from '../images/backgrounds/shenandoah.jpeg';
 import ludington from '../images/backgrounds/ludington.jpeg';
-
-// let MediaQuery = require('react-responsive');
 
 const sections = [
     { title: 'HOME', url: '/' },

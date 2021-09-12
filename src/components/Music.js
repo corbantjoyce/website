@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import geniusprofile from '../images/unannotatedunmastered.jpeg';
 
 const useStyles = makeStyles((theme) => ({
@@ -9,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '1rem'
     },
     container: {
-        padding: '2%'
+        padding: '3%'
     },
     songTitle: {
         display: 'flex',
@@ -36,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Music = props => {
     const classes = useStyles();
+    const mobile = useMediaQuery('(max-width:600px)');
     const songs = [
         {
             title: "DEEP DIVE FIVE",
@@ -52,7 +54,7 @@ const Music = props => {
     return (
         <>
             <Grid container className={classes.container}>
-                <Grid container className={classes.postLeft}>
+                <Grid container className={mobile ? classes.postCenter : classes.postLeft}>
                     <Grid item className={classes.titleBlock}>
                         <p className={classes.songTitle}>
                             "{songs[1].title}"
@@ -60,7 +62,7 @@ const Music = props => {
                         <iframe title={songs[1].title} width="300" height="380" src={songs[1].src} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{maxWidth: '100%', maxHeight: '100%'}}></iframe>
                     </Grid>
                 </Grid>
-                <Grid container className={classes.postRight}>
+                <Grid container className={mobile ? classes.postCenter : classes.postRight}>
                     <Grid item className={classes.titleBlock}>
                         <p className={classes.songTitle}>
                             "{songs[0].title}"

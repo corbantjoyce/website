@@ -3,11 +3,10 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Links from '../components/Links';
-import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        padding: '2%'
+        padding: '3%'
     },
     image: {
         height: '100%',
@@ -19,10 +18,8 @@ const About = props => {
 
     return (
         <>
-            <Grid item>
-                <Paper elevation={0}>
-                    <Links />
-                </Paper>
+            <Grid item style={{background: 'white'}}>
+                <Links />
             </Grid>
             <h2 style={{alignItems: 'center', paddingTop: '2%'}}>
                 About Me
