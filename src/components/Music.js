@@ -5,8 +5,6 @@ import geniusprofile from '../images/unannotatedunmastered.jpeg';
 
 const useStyles = makeStyles((theme) => ({
     p: {
-        display: 'flex',
-        justifyContent: 'center',
         marginTop: '1%',
         fontSize: '1rem'
     },
@@ -77,7 +75,7 @@ const Music = props => {
                             I have always loved music.  I became an editor for Genius in the spring of 2016.
                         </p>
                         <p className={classes.p}>
-                            My profile contains the majority of my work for the site.  I used to be addicted to this site, but I haven't been as active in recent years.
+                        <a href="https://www.genius.com/unannotatedunmastered" target="_blank" rel="noopener noreferrer">My profile</a> contains the majority of my work for the site.  I used to be addicted to this site, but I haven't been as active in recent years.
                         </p>
                     </Grid>
                 </Grid>
