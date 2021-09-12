@@ -1,13 +1,10 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 import Links from '../components/Links';
 
 const useStyles = makeStyles((theme) => ({
-    p: {
-        display: 'flex',
-        justifyContent: 'center',
-    },
     container: {
         padding: '2%'
     }
@@ -19,14 +16,19 @@ const Home = props => {
     return (
         <>
             <Grid item>
-                <Links />
+                <Paper elevation={0}>
+                    <Links />
+                </Paper>
             </Grid>
+            <h2 style={{alignItems: 'center', paddingTop: '2%'}}>
+                Welcome
+            </h2>
             <Grid container className={classes.container}>
                 <Grid item>
-                    <p className={classes.p}>
-                        Welcome to my page!  I built it using React.js and Material UI.
+                    <p>
+                        I built it using React.js and Material UI.
                     </p>
-                    <p className={classes.p}>
+                    <p>
                         Cycle the image at the top by clicking or tapping it.  All photos were taken on my iPhone.
                     </p>
                 </Grid>

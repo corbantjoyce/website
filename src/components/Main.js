@@ -127,10 +127,10 @@ class Main extends Component {
                             style={{maxWidth: '100%', maxHeight: '100%'}}
                         />
                     </MDBBtn>
-                    <Container>
-                        <Grid container style={{justifyContent: 'center'}}>
+                    <Container maxWidth="xl">
+                        <Grid container spacing={1} style={{justifyContent: 'center'}}>
                             <Grid item>
-                                <Paper elevation={0} style={{borderRadius: '0px', backgroundColor: 'lightblue', color: 'white',}}>
+                                <Paper elevation={0} style={{borderRadius: '0px', backgroundColor: 'lightblue', color: 'white'}}>
                                     <Switch>
                                         <Route exact path='/' component={Home} cb={this.state.backgrounds[this.state.currentBackground].src}/>
                                         <Route path='/about' component={About} cb={this.state.backgrounds[this.state.currentBackground].src}/>
