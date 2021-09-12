@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         margin: '2%',
         padding: '1%'
+    },
+    icon: {
+        color: 'lightblue'
     }
 }));
 
@@ -22,11 +25,11 @@ const Links = props => {
 
     return (
         <Fragment>
-            <Container maxWidth="xl" style={{backgroundColor: 'transparent'}}>
+            <Container style={{backgroundColor: 'transparent', padding: '2%'}}>
                 <Grid container alignItems="center">
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
-                            <a href="mailto:corbantjoyce@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <a href="mailto:corbantjoyce@gmail.com" target="_blank" rel="noopener noreferrer" className={classes.icon}>
                                 <MailOutlineIcon />
                                 <span>  </span>
                                 Email
@@ -35,7 +38,7 @@ const Links = props => {
                     </Grid>
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
-                            <a href="https://www.linkedin.com/in/corban-joyce/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/corban-joyce/" target="_blank" rel="noopener noreferrer" className={classes.icon}>
                                 <LinkedInIcon />
                                 <span>  </span>
                                 LinkedIn
@@ -44,7 +47,7 @@ const Links = props => {
                     </Grid>
                     <Grid item xs={4}>
                         <Paper className={classes.paper}>
-                            <a href="https://github.com/corbantjoyce" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/corbantjoyce" target="_blank" rel="noopener noreferrer" className={classes.icon}>
                                 <GitHubIcon />
                                 <span>  </span>
                                 Github

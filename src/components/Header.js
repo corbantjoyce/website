@@ -11,7 +11,9 @@ const useStyles = makeStyles((theme) => ({
   toolbarTitle: {
     flex: 1,
     fontSize: '1.75rem',
-    color: 'lightblue'
+    color: 'lightblue',
+    paddingTop: '1%',
+    paddingBottom: '1%',
   },
   toolbarSecondary: {
     justifyContent: 'space-between',
@@ -32,20 +34,17 @@ export default function Header(props) {
 
   return (
     <Fragment>
-      <Toolbar className={classes.toolbar}>
-        <Link
-          color="inherit"
-          align="center"
-          component="h2"
-          variant="h5"
-          key={title}
-          to="/"
-          className={classes.toolbarTitle}
-        >
-          {title}
-        </Link>
-      </Toolbar>
-      
+      <Link
+        color="inherit"
+        align="center"
+        component="h2"
+        variant="h2"
+        key={title}
+        to="/"
+        className={classes.toolbarTitle}
+      >
+        {title}
+      </Link>
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         {sections.map((section) => (
           <Link

@@ -30,15 +30,16 @@ import ludington from '../images/backgrounds/ludington.jpeg';
 // let MediaQuery = require('react-responsive');
 
 const sections = [
+    { title: 'HOME', url: '/' },
     { title: 'MUSIC', url: '/music' },
     // { title: 'VIDEOS', url: '/videos' },
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
-    { title: 'PROJECTS', url: '/projects' },
+    // { title: 'PROJECTS', url: '/projects' },
     { title: 'RESEARCH', url: '/research' },
     { title: 'ABOUT', url: '/about' },
-    { title: 'BLOG', url: '/blog' },
+    // { title: 'BLOG', url: '/blog' },
 ];
 
 class Main extends Component {    
@@ -119,12 +120,15 @@ class Main extends Component {
                     <Container maxWidth="xl">
                         <Header title="CORBAN JOYCE" sections={sections} />
                     </Container>
-                    <MDBBtn onClick={() => this.changeBackground()} style={{width: '100%'}}>
-                        <img src={this.state.backgrounds[this.state.currentBackground].src} alt={this.state.backgrounds[this.state.currentBackground].alt.toLocaleUpperCase()}  
-                        style={{maxWidth: '100%', maxHeight: '100%'}}/>
+                    <MDBBtn onClick={() => this.changeBackground()} className="p-0" style={{width: '101%'}}>
+                        <img 
+                            src={this.state.backgrounds[this.state.currentBackground].src} 
+                            alt={this.state.backgrounds[this.state.currentBackground].alt.toLocaleUpperCase()}  
+                            style={{maxWidth: '100%', maxHeight: '100%'}}
+                        />
                     </MDBBtn>
-                    <Container maxWidth="xl" style={{paddingBottom: '8px'}}>
-                        <Grid container spacing={1}>
+                    <Container>
+                        <Grid container style={{justifyContent: 'center'}}>
                             <Grid item>
                                 <Paper elevation={0} style={{borderRadius: '0px', backgroundColor: 'lightblue', color: 'white',}}>
                                     <Switch>

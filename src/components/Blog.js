@@ -2,8 +2,6 @@ import React from 'react';
 // import corbanpic from '../images/IMG_0049.jpg';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Links from '../components/Links';
-import Paper from '@material-ui/core/Paper';
 import { text } from '../database/blog_posts/goldenvoting/03042020_GoldenVoting.js';
 
 const useStyles = makeStyles((theme) => ({
@@ -12,6 +10,12 @@ const useStyles = makeStyles((theme) => ({
     },
     image: {
         height: '100%',
+    },
+    title: {
+        margin: '2%'
+    },
+    container: {
+        padding: '2%'
     }
 }));
 
@@ -37,28 +41,16 @@ const Blog = props => {
 
     return (
         <>
-            <Grid item xs={12}>
-                <Paper style={{padding: '0.5%', borderRadius: '0px', backgroundColor: 'darkgray', color: 'white',}} elevation={0}>
-                    <Links />
-                </Paper>
-            </Grid>
-            <div style={{margin: '1%'}}>
-                <h2 style={{alignItems: 'center'}}>
-                    My Blog
-                </h2>
-                <Grid container spacing={2}>
-                    <Grid item xs={3}>
-                        {/* <img src={corbanpic} alt="Corban Joyce" className={classes.p} style={{justifyContent: 'center', maxWidth: '100%', maxHeight: '100%', borderRadius: '8px'}}/> */}
-                    </Grid>
-                    <Grid item>
-                        <div className={classes.p}>
-                            {textParser(text)}
-                        </div>
-                    </Grid>
-                    <Grid item xs={12}>
-                    </Grid>
+            <Grid container className={classes.container}>
+                <Grid item>
+                    <h3 className={classes.title}>
+                        Golden Voting
+                    </h3>
+                    <div className={classes.p}>
+                        {textParser(text)}
+                    </div>
                 </Grid>
-            </div>
+            </Grid>
         </>
     )
 }

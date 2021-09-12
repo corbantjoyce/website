@@ -6,6 +6,9 @@ import sunsetpaviliongif from '../images/sunsetpavilion/timelapse-long.gif';
 const useStyles = makeStyles((theme) => ({
     p: {
         fontSize: '1rem',
+    },
+    container: {
+        padding: '2%'
     }
 }));
 
@@ -17,7 +20,7 @@ const Projects = props => {
             <h2 style={{alignItems: 'center'}}>
                 Projects
             </h2>
-            <Grid container spacing={1}>
+            <Grid container className={classes.container}>
                 <Grid container spacing={3}>
                     <Grid item xs={4}>
                         <p className={classes.p}>
@@ -31,7 +34,7 @@ const Projects = props => {
                     </Grid>
                     <Grid item xs={4}>
                         <p className={classes.p}>
-                            Februrary 2020 - June 2020
+                            February 2020 - June 2020
                         </p>
                     </Grid>
                     <Grid item xs={12}>
