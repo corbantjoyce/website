@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
 import PropTypes from 'prop-types';
+import { useHistory } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Link from '@material-ui/core/Link';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+// import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -31,12 +32,13 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header(props) {
   const classes = useStyles();
-  const mobile = useMediaQuery('(max-width:600px)');
+  const history = useHistory();
+  // const mobile = useMediaQuery('(max-width:600px)');
   const { sections, title } = props;
 
   return (
     <Fragment>
-      <Link
+      {/* <Link
         color="inherit"
         align="center"
         component="h2"
@@ -44,9 +46,19 @@ export default function Header(props) {
         key={title}
         to="/"
         className={classes.toolbarTitle}
+        onClick={(e) => { e.preventDefault(); history.push('/'); }}
       >
         {title}
-      </Link>
+      </Link> */}
+      <a
+        href="/"
+        color="inherit"
+        align="center"
+        className={classes.toolbarTitle}
+        onClick={(e) => { e.preventDefault(); history.push('/'); }}
+      >
+        {title}
+      </a>
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         {sections.map((section) => (
           <Link

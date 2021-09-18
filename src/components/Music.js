@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '1rem'
     },
     container: {
+        marginTop: '3%',
         padding: '3%'
     },
     songTitle: {

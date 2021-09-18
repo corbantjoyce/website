@@ -15,7 +15,7 @@ import Blog from './Blog';
 import { Container } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+// import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 //backgrounds
 import lakelucerne from '../images/backgrounds/lakelucerne.jpeg';
@@ -30,13 +30,13 @@ import shenandoah from '../images/backgrounds/shenandoah.jpeg';
 import ludington from '../images/backgrounds/ludington.jpeg';
 
 const sections = [
-    { title: 'HOME', url: '/' },
+    // { title: 'HOME', url: '/' },
     { title: 'MUSIC', url: '/music' },
     // { title: 'VIDEOS', url: '/videos' },
     // { title: 'Travel', url: 'travel' },
     // { title: 'Health', url: 'health' },
     // { title: 'Philanthropy', url: 'philanthropy' },
-    // { title: 'PROJECTS', url: '/projects' },
+    { title: 'PROJECTS', url: '/projects' },
     { title: 'RESEARCH', url: '/research' },
     { title: 'ABOUT', url: '/about' },
     // { title: 'BLOG', url: '/blog' },
@@ -97,6 +97,11 @@ class Main extends Component {
             },
             image: {
                 marginTop: '1%',
+            },
+            button: {
+                width: '100%',
+                border: '0px',
+                borderRadius: '0px'
             }
         };
     }
@@ -120,7 +125,7 @@ class Main extends Component {
                     <Container maxWidth="xl">
                         <Header title="CORBAN JOYCE" sections={sections} />
                     </Container>
-                    <MDBBtn onClick={() => this.changeBackground()} className="p-0" style={{width: '101%'}}>
+                    <MDBBtn onClick={() => this.changeBackground()} className="p-0" style={this.classes.button}>
                         <img 
                             src={this.state.backgrounds[this.state.currentBackground].src} 
                             alt={this.state.backgrounds[this.state.currentBackground].alt.toLocaleUpperCase()}  

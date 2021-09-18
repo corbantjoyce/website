@@ -6,9 +6,20 @@ import sunsetpaviliongif from '../images/sunsetpavilion/timelapse-long.gif';
 const useStyles = makeStyles((theme) => ({
     p: {
         fontSize: '1rem',
+        display: 'flex',
+        alignContent: 'center',
+        justifyContent: 'center'
     },
     container: {
-        padding: '2%'
+        display: 'flex',
+        justifyContent: 'center',
+        marginTop: '3rem',
+        padding: '3%'
+    },
+    locationAndDate: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 }));
 
@@ -17,22 +28,19 @@ const Projects = props => {
 
     return (
         <>
-            <h2 style={{alignItems: 'center'}}>
-                Projects
-            </h2>
             <Grid container className={classes.container}>
                 <Grid container spacing={3}>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className={classes.locationAndDate}>
                         <p className={classes.p}>
                             Cleveland, OH
                         </p>
                     </Grid>
                     <Grid item xs={4}>
-                        <p className={classes.p}>
+                        <h3>
                             Sunset Pavilion
-                        </p>
+                        </h3>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} className={classes.locationAndDate}>
                         <p className={classes.p}>
                             February 2020 - June 2020
                         </p>
