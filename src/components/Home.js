@@ -18,15 +18,15 @@ const Home = props => {
                 <Links />
             </Grid>
             <h2 style={{alignItems: 'center', paddingTop: '2%'}}>
-                Welcome
+                Welcome!
             </h2>
             <Grid container className={classes.container}>
                 <Grid item>
                     <p>
-                        I built it using React.js and Material UI.
+                        I built this website using React.js and Material UI, with a pipeline configured in AWS, triggered by a Github webhook.
                     </p>
                     <p>
-                        Cycle the image at the top by clicking or tapping it.  All photos were taken on my iPhone.
+                        Cycle through images at the top by clicking or tapping the current photo.  All photos were taken on my iPhone.
                     </p>
                 </Grid>
             </Grid>
