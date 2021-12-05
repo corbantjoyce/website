@@ -14,7 +14,7 @@ phases:
       - aws s3 cp --recursive --acl public-read ./build s3://codepipeline-us-east-2-430342469624/ 
       # set the cache-control headers for service-worker.js to prevent
       # browser caching
-      - >${}
+      - >
         aws s3 cp --acl public-read 
         --cache-control="max-age=0, no-cache, no-store, must-revalidate" 
         ./build/service-worker.js s3://codepipeline-us-east-2-430342469624/
