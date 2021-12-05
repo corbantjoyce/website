@@ -10,7 +10,7 @@ Parameters:
   GithubOAuthToken:
     Type: String
     Description: "Github personal access token"
-  PipelineBucket:
+  DeployBucket:
     Type: String
     Default: codepipeline-us-east-2-430342469624
     Description: "S3 bucket to store build"
