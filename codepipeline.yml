@@ -192,7 +192,7 @@ Resources:
     Type: 'AWS::S3::Bucket'
     Properties:
       WebsiteConfiguration:
-        IndexDocument: index.html
+        IndexDocument: index.js
   Distribution:
     Type: "AWS::CloudFront::Distribution"
     Properties:
@@ -203,7 +203,7 @@ Resources:
             Id: !Ref DeployBucket
             S3OriginConfig:
               OriginAccessIdentity: ''
-        DefaultRootObject: index.html
+        DefaultRootObject: index.js
         Enabled: true
         DefaultCacheBehavior: 
           MinTTL: 86400
