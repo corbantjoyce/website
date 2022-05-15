@@ -90,7 +90,7 @@ class Main extends Component {
             ],
             currentBackground: 0,
         };
-        this.uri = 'https://www.corbanjoyce.com';
+        this.uri = 'https://corbanjoyce.com';
         this.classes = {
             root: {
                 flexGrow: 1,
